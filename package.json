@@ -1,11 +1,13 @@
 {
   "name": "@holyfata/unlazy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "repository": "git@github.com:holyfata/unlazy.git",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
@@ -22,6 +24,8 @@
     "lint:fix": "automd && eslint . --fix && prettier -w .",
     "prepack": "pnpm build",
     "release": "pnpm test && changelogen --release && npm publish --access=public && git push --follow-tags",
+    "release:vue": "pnpm --filter=@holyfata/unlazy-vue run release",
+    "release:react": "pnpm --filter=@holyfata/unlazy-react run release",
     "test": "pnpm lint && pnpm test:types && vitest run --coverage",
     "test:types": "tsc --noEmit --skipLibCheck"
   },
