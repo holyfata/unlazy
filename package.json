@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/unlazy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "repository": "git@github.com:holyfata/unlazy.git",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "lint": "eslint . && prettier -c .",
     "lint:fix": "automd && eslint . --fix && prettier -w .",
     "prepack": "pnpm build",
-    "release": "pnpm test && changelogen --release && npm publish && git push --follow-tags",
+    "release": "pnpm test && changelogen --release && npm publish --access=public && git push --follow-tags",
     "test": "pnpm lint && pnpm test:types && vitest run --coverage",
     "test:types": "tsc --noEmit --skipLibCheck"
   },
