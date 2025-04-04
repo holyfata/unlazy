@@ -1,0 +1,22 @@
+{
+  "name": "@holyfata/unlazy-react",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/cjs/index.d.ts",
+  "scripts": {
+    "build": "rslib build",
+    "prerelease": "npm run build",
+    "release": "changelogen --release && npm publish --access=public"
+  },
+  "devDependencies": {
+    "@holyfata/unlazy": "workspace:*",
+    "@rsbuild/plugin-react": "1.1.1",
+    "@rslib/core": "0.6.1",
+    "@types/react": "19.1.0",
+    "react": "19.1.0"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "version": "0.0.1"
+}
