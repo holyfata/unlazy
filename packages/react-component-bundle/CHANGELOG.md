@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.0.2
+
+[compare changes](https://github.com/holyfata/unlazy/compare/v0.0.4...v0.0.2)
+
+### 🏡 Chore
+
+- **release:** V0.0.3 ([8a9325a](https://github.com/holyfata/unlazy/commit/8a9325a))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata](https://github.com/holyfata))
 
 ## v0.0.1
 
@@ -13,4 +24,3 @@
 ### ❤️ Contributors
 
 - Holyfata ([@holyfata](https://github.com/holyfata))
-
