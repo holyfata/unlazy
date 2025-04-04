@@ -2,8 +2,8 @@
 
 <!-- automd:badges color=yellow -->
 
-[![npm version](https://img.shields.io/npm/v/packageName?color=yellow)](https://npmjs.com/package/packageName)
-[![npm downloads](https://img.shields.io/npm/dm/packageName?color=yellow)](https://npm.chart.dev/packageName)
+[![npm version](https://img.shields.io/npm/v/@holyfata/unlazy?color=yellow)](https://npmjs.com/package/@holyfata/unlazy)
+[![npm downloads](https://img.shields.io/npm/dm/@holyfata/unlazy?color=yellow)](https://npm.chart.dev/@holyfata/unlazy)
 
 <!-- /automd -->
 
@@ -54,11 +54,11 @@ import {} from "https://esm.sh/pkg";
 
 <!-- automd:contributors license=MIT -->
 
-Published under the [MIT](https://github.com/unjs/packageName/blob/main/LICENSE) license.
-Made by [community](https://github.com/unjs/packageName/graphs/contributors) 💛
+Published under the [MIT](https://github.com/holyfata/unlazy/blob/main/LICENSE) license.
+Made by [community](https://github.com/holyfata/unlazy/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/unjs/packageName/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=unjs/packageName" />
+<a href="https://github.com/holyfata/unlazy/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=holyfata/unlazy" />
 </a>
 
 <!-- /automd -->
