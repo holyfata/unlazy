@@ -21,6 +21,26 @@ npm install @holyfata/unlazy
 # The usage can be seen at packages/***-component-bundle
 ```
 
+```ts
+// when selector in view, will trigger handleEnter
+// when selector leave view, will trigger handleLeave
+new Monitor(selector, handleEnter, handleLeave);
+```
+
+```ts
+// when selector in view, will trigger handleEnter
+// when selector leave view, will trigger handleLeave
+new Monitor(selector, handleEnter, handleLeave);
+
+new MultiMonitor(
+  [selector],
+  handleAllEnter,
+  handleSomeEnter,
+  handleAllLeave,
+  handleSomeLeave,
+);
+```
+
 ### Vue version
 
 Install the vue wrapper [recommend]:

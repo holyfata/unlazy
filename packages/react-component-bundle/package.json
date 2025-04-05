@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rslib build",
     "prerelease": "npm run build",
-    "release": "changelogen --release --no-tag && npm publish --access=public"
+    "release": "changelogen --bump --no-tag && npm publish --access=public"
   },
   "devDependencies": {
     "@holyfata/unlazy": "workspace:*",
@@ -18,5 +18,5 @@
   "peerDependencies": {
     "react": "*"
   },
-  "version": "0.0.3"
+  "version": "0.0.7"
 }
