@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.4
+
+[compare changes](https://github.com/holyfata/unlazy/compare/v0.0.5...v0.0.4)
+
 ## v0.0.3
 
 [compare changes](https://github.com/holyfata/unlazy/compare/v0.0.4...v0.0.3)
