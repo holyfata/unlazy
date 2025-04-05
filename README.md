@@ -1,4 +1,4 @@
-# packageName
+# @holyfata/unlazy
 
 <!-- automd:badges color=yellow -->
 
@@ -7,48 +7,87 @@
 
 <!-- /automd -->
 
-This is my package description.
+A package to monitor the element's position.
 
 ## Usage
 
-Install the package:
+### Base version
+
+Install the base package:
 
 ```sh
-# ✨ Auto-detect (supports npm, yarn, pnpm, deno and bun)
-npx nypm install packageName
+npm install @holyfata/unlazy
+
+# The usage can be seen at packages/***-component-bundle
 ```
 
-Import:
+### Vue version
 
-<!-- automd:jsimport cdn name="pkg" -->
+Install the vue wrapper [recommend]:
 
-**ESM** (Node.js, Bun, Deno)
-
-```js
-import {} from "pkg";
+```sh
+npm install @holyfata/unlazy-vue
 ```
 
-**CDN** (Deno, Bun and Browsers)
+```vue
+<template>
+  <div style="width: 100vw; height: 100vh"></div>
 
-```js
-import {} from "https://esm.sh/pkg";
+  <VisibilityWrapper
+    selector="#watchedElement"
+    @handleVisibility="handleVisibility"
+  >
+    <template #default="{ isVisible }">
+      <div id="watchedElement">
+        <p v-if="isVisible">Element is in view</p>
+        <p v-else>Element is not in view</p>
+      </div>
+    </template>
+  </VisibilityWrapper>
+</template>
+
+<script setup>
+import { VisibilityWrapper } from "@holyfata/unlazy-vue";
+
+const handleVisibility = (isVisible) => {
+  console.log("Visible :", isVisible);
+};
+</script>
 ```
 
-<!-- /automd -->
+### React version
 
-## Development
+Install the react wrapper [recommend]:
 
-<details>
+```sh
+npm install @holyfata/unlazy-react
+```
 
-<summary>local development</summary>
+```tsx
+import VisibilityWrapper from "@holyfata/unlazy-react";
 
-- Clone this repository
-- Install latest LTS version of [Node.js](https://nodejs.org/en/)
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
-- Install dependencies using `pnpm install`
-- Run interactive tests using `pnpm dev`
+function App() {
+  return (
+    <div>
+      <div className="app"></div>
+      <VisibilityWrapper
+        selector="#target-element"
+        onVisibilityChange={(isVisible) =>
+          console.log("Visibility changed:", isVisible)
+        }
+      >
+        {({ isVisible }) => (
+          <div id="target-element">
+            {isVisible ? "Element is visible" : "Element is not visible"}
+          </div>
+        )}
+      </VisibilityWrapper>
+    </div>
+  );
+}
 
-</details>
+export default App;
+```
 
 ## License
 

@@ -7,8 +7,8 @@
   >
     <template #default="{ isVisible }">
       <div id="watchedElement">
-        <p v-if="isVisible">元素在视口中</p>
-        <p v-else>元素不在视口中</p>
+        <p v-if="isVisible">Element is in view</p>
+        <p v-else>Element is not in view</p>
       </div>
     </template>
   </VisibilityWrapper>
