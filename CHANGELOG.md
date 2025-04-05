@@ -1,5 +1,26 @@
 # Changelog
 
+## v0.0.5
+
+[compare changes](https://github.com/holyfata/unlazy/compare/v0.0.4...v0.0.5)
+
+### 🚀 Enhancements
+
+- Release 3 packages ([463e55f](https://github.com/holyfata/unlazy/commit/463e55f))
+- Test react and vue demo ([d09fcc9](https://github.com/holyfata/unlazy/commit/d09fcc9))
+- Fix the yaml ([fe64d09](https://github.com/holyfata/unlazy/commit/fe64d09))
+- Formate the code ([6f962a2](https://github.com/holyfata/unlazy/commit/6f962a2))
+- Update the readme ([3a6c55c](https://github.com/holyfata/unlazy/commit/3a6c55c))
+
+### 🏡 Chore
+
+- **release:** V0.0.3 ([8a9325a](https://github.com/holyfata/unlazy/commit/8a9325a))
+- **release:** V0.0.2 ([a4e4d4a](https://github.com/holyfata/unlazy/commit/a4e4d4a))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata](https://github.com/holyfata))
+
 ## v0.0.4
 
 [compare changes](https://github.com/holyfata/unlazy/compare/v0.0.3...v0.0.4)
